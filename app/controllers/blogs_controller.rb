@@ -10,7 +10,7 @@ class BlogsController < ApplicationController
     @blog = Blog.new(blog_param)
     
     if @blog.save
-      redirect_to blog_path
+      redirect_to blogs_path
     else
       render "new"
     end
